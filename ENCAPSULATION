@@ -1,0 +1,29 @@
+// student details using getter and setter methods in encapsulation
+class Student_details{
+    private static int id = 101;
+    private static String name = "Name" ;
+    private static String course = "Course";
+
+    public int getId(){
+        return id;
+    }
+    public String getName(){
+        return name;
+    }
+    public String getCourse(){
+        return course;
+    }
+    public static void main(String[] args) {
+        System.out.println("Student id : "+id);
+        System.out.println("Student name : "+name);
+        System.out.println("Student course : "+course);
+    }
+}
+public class Encapsulation{
+    public static void main(String[] args) {
+        Student_details obj = new Student_details();
+        System.out.println(obj.getId());
+        System.out.println(obj.getName());
+        System.out.println(obj.getCourse());
+    }
+}
