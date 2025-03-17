@@ -1,0 +1,132 @@
+ Abstarction in java
+abstract class Animal{           // abstract class
+    public abstract void sound();       // abstract method
+}
+class dog extends Animal{
+    public void sound(){      // abstract method is converted o normal method
+        System.out.println("Bark");
+    }
+}
+class cat extends Animal{
+    public void sound(){
+        System.out.println("Meow");
+    }
+}
+class tiger extends Animal{
+    public void sound(){
+        System.out.println("Roar");
+    }
+}
+public class Abstraction {
+    public static void main(String[] args) {
+        dog obj = new dog();
+        obj.sound();
+        cat obj1 = new cat();
+        obj1.sound();
+        tiger obj2 = new tiger();
+        obj2.sound();
+    }
+}
+
+
+abstract class Dog{           // abstract class
+    public abstract void dog_details();       // abstract method
+}
+class dog_name extends Dog{
+    public void dog_details(){// abstract method is converted o normal method
+        String dog_name = "Name";
+        System.out.println("Dog Name : "+dog_name);
+    }
+}
+class dog_breed extends Dog{
+    public void dog_details(){
+        String dog_breed = "Breed";
+        System.out.println("Dog Breed : "+dog_breed);
+    }
+}
+class dog_price extends Dog{
+    public void dog_details(){
+        String dog_price = "Price";
+        System.out.println("Dog price : "+dog_price);
+    }
+}
+class dog_location extends Dog{
+    public void dog_details(){
+        String dog_location = "Location";
+        System.out.println("Dog Location : "+dog_location);
+    }
+}
+class dog_owner_details extends Dog{
+    public void dog_details(){
+        String dog_owner_details = "Owner details";
+        System.out.println("Dog owner details : "+dog_owner_details);
+    }
+}
+public class Abstraction {
+    public static void main(String[] args) {
+        System.out.println("Dog details : ");
+        System.out.println("---------------------------");
+        dog_name obj = new dog_name();
+        obj.dog_details();
+        System.out.println("---------------------------");
+        dog_breed obj1 = new dog_breed();
+        obj1.dog_details();
+        System.out.println("---------------------------");
+        dog_price obj2 = new dog_price();
+        obj2.dog_details();
+        System.out.println("---------------------------");
+        dog_location obj3 = new dog_location();
+        obj3.dog_details();
+        System.out.println("---------------------------");
+        dog_owner_details obj4 = new dog_owner_details();
+        obj4.dog_details();
+        System.out.println("---------------------------");
+    }
+}
+
+abstract class Car{
+    public abstract void car_details();
+}
+class Car1 extends Car {
+    public void car_details() {
+        String car_name = "Name";
+        System.out.println("Car name : " + car_name);
+        String car_price = "Price";
+        System.out.println("Car price : " + car_price);
+        String car_company = "Company name ";
+        System.out.println("Car Company : " + car_company);
+        String car_location = "Location";
+        System.out.println("Car location : " + car_location);
+        String car_owner_details = "Owner details";
+        System.out.println("Car owner details : " + car_owner_details);
+    }
+
+    public static void main(String[] args) {
+        Car1 obj = new Car1();
+        obj.car_details();
+    }
+}
+
+
+abstract class Flower{
+    public abstract void flower_details();
+}
+class flower1 extends Flower{
+    public void flower_details() {
+        this.flower_name = "Name";
+        System.out.println("FLower name : " + this.flower_name);
+        this.flower_color = "color ";
+        System.out.println("Flower color : " + flower_color);
+        String flower_price = "Price";
+        System.out.println("Flower price : " + flower_price);
+        String flower_size = "size";
+        System.out.println("FLower size : " + flower_size);
+        String flower_smell = "Smell";
+        System.out.println("Flower smell : " + flower_smell);
+    }
+
+    public static void main(String[] args) {
+        flower1 obj = new flower1();
+        obj.flower_details();
+    }
+}
