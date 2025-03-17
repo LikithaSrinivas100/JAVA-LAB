@@ -1,0 +1,116 @@
+// super class or parent class
+class Parent{
+    public static void parent1(){
+        System.out.println("Parent class method!");
+    }
+}
+
+// subclass
+class Child extends Parent{
+    public static void child1(){
+        System.out.println("Child class method!");
+    }
+
+    public static void main(String[] args) {
+        Child obj = new Child();
+        obj.parent1();
+        obj.child1();
+    }
+}
+
+
+class Animal{
+    public static void barking(){
+        System.out.println("Dog is barking!");
+    }
+}
+
+class Behavior extends Animal{
+    public static void eating(){
+        System.out.println("Dog is eating!");
+    }
+    public static void main(String[] args) {
+        Behavior obj = new Behavior();
+        obj.barking();
+        obj.eating();
+    }
+}
+
+
+ vehicles example : Car
+class Vehicles{
+    public static void car_company(){
+        System.out.println("Car Model : MercedesBenz.");
+    }
+}
+class Car extends Vehicles{
+    public static void car_price(){
+        System.out.println("Car price : 50Lakhs.");
+    }
+}
+public class Inheritance {
+    public static void main(String[] args) {
+        System.out.println("Car details : ");
+        System.out.println("================");
+        Car obj = new Car();
+        obj.car_company();
+        obj.car_price();
+    }
+}
+
+ FRUIT Example :
+class Fruit{
+    public static void Fruit(){
+        System.out.println("Fruit is : Orange.");
+    }
+}
+class Fruit_details extends Fruit{
+    public static void fruit_colour(){
+        System.out.println("Fruit colour is : Orange.");
+    }
+    public static void fruit_shape(){
+        System.out.println("Fruit shape is : Round.");
+    }
+    public static void fruit_taste(){
+        System.out.println("Fruit taste is : Sweet.");
+    }
+    public static void fruit_price(){
+        System.out.println("Fruit price is : 50rs.");
+    }
+}
+public class Inheritance{
+    public static void main(String[] args) {
+        System.out.println("Fruit details : ");
+        System.out.println("=======================");
+        Fruit_details obj = new Fruit_details();
+        obj.Fruit();
+        obj.fruit_colour();
+        obj.fruit_shape();
+        obj.fruit_taste();
+        obj.fruit_price();
+    }
+}
+
+
+class Parent{      //super or parent class
+    Parent(){      //parent class constructor
+        System.out.println("Parent class constructor.");
+    }
+    void parent1(){
+        System.out.println("Parent class method.");
+    }
+}
+class Child extends Parent {          //sub or child class
+    Child(){                          //child class constructor
+        System.out.println("Child class constructor.");
+    }
+    void child1(){
+        System.out.println("Child class method.");
+    }
+}
+public class Inheritance{
+    // int a = 100;
+    public static void main(String[] args){
+        // Main
+    }
+}
