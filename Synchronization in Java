@@ -1,0 +1,19 @@
+package sample;
+
+class Print{                                        // parent class
+    synchronized void message(String msg) {         // main class
+        System.out.print("["+msg);
+        try{
+            Thread.sleep(1000);
+        } catch(InterruptedException e){
+            System.out.println(e);
+        }
+        System.out.println("]");
+    }
+}
+class MyThread extends Thread{                     // Child or Thread class
+    Print print_msg;
+    String msg;
+    MyThread(Print print_msg, String msg){
+        this.print_msg = print_msg;
+        this.msg = msg;
